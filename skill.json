@@ -1,0 +1,38 @@
+{
+  "name": "genpark-multilingual-dense-embedding-cross-encoder-reranker-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - 100+ language dense embedding vectorizer and cross-encoder neural reranker optimizing enterprise RAG retrieval precision.",
+  "author": "genpark",
+  "category": "rag-embeddings",
+  "tags": [
+    "dense-embeddings",
+    "neural-reranker",
+    "cross-encoder",
+    "multilingual-rag",
+    "cohere"
+  ],
+  "inputs": {
+    "search_query": {
+      "type": "string"
+    },
+    "candidate_documents": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "rerank_job_id": {
+      "type": "string"
+    },
+    "top_relevance_score": {
+      "type": "number"
+    },
+    "cross_encoder_latency_ms": {
+      "type": "integer"
+    },
+    "rag_hallucination_reduction_pct": {
+      "type": "number"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
